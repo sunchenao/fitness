@@ -1,0 +1,60 @@
+name: fitness_tracker
+description: A free fitness tracking mobile app with smart exercise recognition using device sensors
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # 状态管理
+  provider: ^6.1.1
+  
+  # 本地数据库
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # 传感器
+  sensors_plus: ^4.0.2
+  permission_handler: ^11.2.0
+  
+  # UI组件
+  cupertino_icons: ^1.0.2
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  
+  # 数据处理
+  shared_preferences: ^2.2.2
+  
+  # 图表显示
+  fl_chart: ^0.66.0
+  
+  # 工具库
+  uuid: ^4.3.3
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700
